@@ -1,0 +1,71 @@
+Q1. A program P reads in 500 integers in the range [0..100] representing the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies?
+Ans- An array of 50 numbers
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q2. What will the output of the below code?
+
+C/C++ Code
+ #include <iostream>
+
+using namespace std;
+
+
+
+int main()
+
+{
+
+
+
+    int arr[2] = { 1, 2 };
+
+    cout << 0 [arr] << ", " << 1 [arr] << endl;
+
+    return 0;
+
+}Java Code
+ public class Main {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2};
+
+        System.out.println(arr[0] + ", " + arr[1]);
+
+    }
+
+}
+Ans- 1,2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q3. The minimum number of comparisons required to determine if an integer appears more than n/2 times in a sorted array of n integers is
+Ans-  Θ(logn)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q4. Let A be a square matrix of size n x n. Consider the following program. What is the expected output? 
+
+C = 100
+
+for i = 1 to n do
+
+    for j = 1 to n do
+
+    {
+
+        Temp = A[i][j] + C
+
+        A[i][j] = A[j][i]
+
+        A[j][i] = Temp - C
+
+    } 
+
+for i = 1 to n do
+
+    for j = 1 to n doWhich of the following correctly declares an array?
+
+int geeks[20];
+
+        Output(A[i][j]);
+Ans- The matrix A itself
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q5. Which of the following correctly declares an array?
+Ans- 
+int geeks[20];
