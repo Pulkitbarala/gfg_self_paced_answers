@@ -1,0 +1,194 @@
+Q1.What is the most common use of recursion?
+Ans- To solve problems where the solution can be broken down into smaller, identical sub-problems
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q2. Predict output of following program 
+C/C++ Code
+#include <stdio.h>
+int fun(int n)
+{
+    if (n == 4)
+       return n;
+    else return 2*fun(n+1);
+}
+int main()
+{
+   printf("%d", fun(2));
+   return 0;
+}
+Ans- 16
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q3.Consider the following recursive function fun(x, y). What is the value of fun(4, 3) 
+C/C++ Code
+int fun(int x, int y) 
+{
+  if (x == 0)
+    return y;
+  return fun(x - 1,  x + y);
+} 
+Ans- 13
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q4.What does the following function print for n = 25? 
+C/C++ Code
+void fun(int n)
+{
+  if (n == 0)
+    return;
+  printf("%d", n%2);
+  fun(n/2);
+}  
+Ans- 10011
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q5.What does the following function do? 
+
+C/C++ Code
+ 
+
+int fun(int x, int y)
+
+{
+
+    if (y == 0)   return 0;
+
+    return (x + fun(x, y-1));
+
+}
+Ans- x*y
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q6.Output of following program? 
+
+C/C++ Code
+ 
+
+#include<stdio.h>
+
+void print(int n)
+
+{
+
+    if (n > 4000)
+
+        return;
+
+    printf("%d ", n);
+
+    print(2*n);
+
+    printf("%d ", n);
+
+}
+
+
+
+int main()
+
+{
+
+    print(1000);
+
+    getchar();
+
+    return 0;
+
+}
+Ans-
+1000 2000 4000 4000 2000 1000
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q7.What does the following function do? 
+
+C/C++ Code
+ 
+
+int fun(unsigned int n)
+
+{
+
+    if (n == 0 || n == 1)
+
+        return n;
+
+
+
+    if (n%3 != 0)
+
+        return 0;
+
+
+
+    return fun(n/3);
+
+}
+Ans-
+It returns 1 when n is a power of 3, otherwise returns 0
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q8.Predict the output of following program 
+
+C/C++ Code
+ 
+
+#include <stdio.h>
+
+int f(int n)
+
+{
+
+    if(n <= 1)
+
+        return 1;
+
+    if(n%2 == 0)
+
+        return f(n/2);
+
+    return f(n/2) + f(n/2+1);
+
+}
+
+
+
+
+
+int main()
+
+{
+
+    printf("%d", f(11));
+
+    return 0;
+
+}
+Ans- 5
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q9.Consider the following recursive C++ function that takes two arguments 
+
+C/C++ Code
+ 
+
+ unsigned int foo(unsigned int n, unsigned int r) {
+
+  if (n  > 0) return (n%r +  foo (n/r, r ));
+
+  else return 0;
+
+}
+
+What is the return value of the function foo when it is called foo(345, 10)?
+Ans- 12
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q10.Consider the same recursive C++ function that takes two arguments 
+
+C/C++ Code
+ unsigned int foo(unsigned int n, unsigned int r)
+
+{
+
+    if (n > 0)
+
+        return (n % r + foo(n / r, r));
+
+    else
+
+        return 0;
+
+}
+What is the return value of the function foo when it is called as foo(513, 2)?
+Ans- 2
