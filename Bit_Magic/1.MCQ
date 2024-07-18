@@ -1,0 +1,46 @@
+Q1. What is the result of the expression 5 & 3?
+Ans- 1
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q2. What is the result of the expression 5 | 3?
+Ans- 7
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q3. What is the result of the expression 5 >> 2?
+Ans- 1
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q4. What is the return value of following function for arr[] = {9, 12, 2, 11, 2, 2, 10, 9, 12, 10, 9, 11, 2} and n is size of this array. 
+C/C++ Code
+ 
+int fun(int arr[], int n)
+{
+    int x = arr[0];
+    for (int i = 1; i < n; i++)
+        x = x ^ arr[i];
+    return x;
+}
+Ans- 9
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q5. What does the following C expression do? x = (x<<1) + x + (x>>1);
+Ans- Multiplies an integer with 3.5
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q6.What is the result of the expression 5 << 2?
+Ans- 20
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q7.What is the result of the expression 5 ^ 3?
+Ans- 6
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q8.What does the following C expression do?
+   x = x & (x-1) 
+Ans- Turns of the rightmost set bit
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q9.Suppose we have a set {1,  2, 3}. Find the XOR of all the subsets of the set.
+Ans- 0
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q10.Consider the following code snippet for checking whether a number is power of 2 or not. 
+C/C++ Code
+/* Incorrect function to check if x is power of 2*/
+bool isPowerOfTwo (unsigned int x) 
+{ 
+  return (!(x&(x-1))); 
+} 
+What is wrong with above function?
+Ans- It does not work for x = 0
