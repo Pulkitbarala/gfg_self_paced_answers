@@ -1,0 +1,29 @@
+Q1. What is recurrence for worst case of QuickSort and what is the time complexity in Worst case?
+Ans - Recurrence is T(n) = T(n-1) + O(n) and time complexity is O(n^2)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q2. Suppose we have an O(n) time algorithm that finds the median of an unsorted array. Now consider a QuickSort implementation where we first find the median using the above algorithm, then use the median as a pivot. What will be the worst-case time complexity of this modified QuickSort?
+Ans - O(nLogn)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q3. Which of the following is not a stable sorting algorithm in its typical implementation.
+Ans - Quick Sort
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q4. Which of the following sorting algorithms in its typical implementation gives best performance when applied on an array which is sorted or almost sorted (maximum 1 or two elements are misplaced).
+Ans - Insertion Sort
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q5. Given an unsorted array. The array has this property that every element in the array is at most k distance from its position in a sorted array where k is a positive integer smaller than the size of an array. Which sorting algorithm can be easily modified for sorting this array and what is the obtainable time complexity?
+Ans - Heap Sort with time complexity O(nLogk)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q6. Which of the following is not true about comparison-based sorting algorithms?
+Ans - Heap Sort is not a comparison based sorting algorithm.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q7. You have to sort 1 GB of data with only 100 MB of available main memory. Which sorting technique will be most appropriate?
+Ans - Merge sort
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q8. The tightest lower bound on the number of comparisons, in the worst case, for comparison-based sorting is of the order of
+Ans - NlogN
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q9. In a modified merge sort, the input array is splitted at a position one-third of the length(N) of the array. Which of the following is the tightest upper bound on time complexity of this modified Merge Sort.
+Ans - N(logN base 3/2)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q10. Which sorting algorithm will take least time when all elements of input array are identical? Consider typical implementations of sorting algorithms.
+Ans - Insertion Sort
