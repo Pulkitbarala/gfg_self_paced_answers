@@ -1,0 +1,58 @@
+Q1. Which of the following is correct recurrence for worst case of Binary Search?
+Ans - T(n) = T(n/2) + O(1) and T(1) = T(0) = O(1)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q2. Given a sorted array of integers, what can be the minimum worst-case time complexity to find ceiling of a number x in given array? The ceiling of an element x is the smallest element present in array which is greater than or equal to x. Ceiling is not present if x is greater than the maximum element present in array. For example, if the given array is {12, 67, 90, 100, 300, 399} and x = 95, then the output should be 100.
+Ans -  O(log(n))
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q3. The increasing order of performance  of the searching algorithms are:
+Ans - linear search  <  jump search  <  binary search
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q4. The average number of key comparisons done in a successful sequential search in a list of length n is
+Ans - (n+1)/2 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q5. The recurrence relation that arises in relation with the complexity of binary search is:
+Ans - T(n) = T(n / 2) + k , where k is constant
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q6. The average case occurs in the Linear Search Algorithm when:
+Ans - The item to be searched is in some where middle of the Array
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q7. Number of comparisons required for an unsuccessful search of an element in a sequential search, organized, fixed length, symbol table of length L is
+Ans - L
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q8. Consider a sorted array of n numbers and a number x. What would be the time complexity of the best known algorithm to find a triplet with sum equal to x. For example, arr[] = {1, 5, 10, 15, 20, 30}, x = 40. Then there is a triplet {5, 15, 20} with sum 40.
+Ans - O(n^2)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q9. Consider the following program that attempts to locate an element x in a sorted array a[ ] using binary search. Assume N>1. The program is erroneous. Under what conditions does the program fail?
+
+var i,j,k: integer;  x: integer;
+
+    a: array; [1....N] of integer;
+
+begin	i:= 1; j:= N;
+
+repeat	
+
+    k:(i+j) div 2;
+
+    if a[k] < x then i:= k 
+
+    else j:= k 
+
+until (a[k] = x) or (i >= j);
+
+    
+
+if (a[k] = x) then
+
+    writeln ('x is in the array')
+
+else
+
+    writeln ('x is not in the array')
+
+end;
+
+Ans- Both of the Above
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q10. The necessary condition for using binary search in an array is :-
+Ans - The array should be sorted 
