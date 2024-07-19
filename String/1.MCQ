@@ -1,0 +1,36 @@
+QUESTION 1. How many minimum string traversals are required to find first non-repeating character in a string?
+Ans- One
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 2. What is the minimum possible time complexity to sort a string of lower and upper case English alphabets?
+Ans - O(N)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 3. Which data structure or algorithm is used to search thousands of different small strings in a fixed text efficiently?
+Ans - Suffix Tree
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 4. What does the following code do for a substring beginning from index low and ending with high (both inclusive).
+
+reverse(str, low, low + x-1)
+
+reverse(str, low + x, high)
+
+reverse(low, high)
+
+Ans - Counter Clockwise rotates substring str[low..high] by x
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 5. In pattern searching problem (searching a string of length m in a text of length n where n >= m), if we know that all characters of the pattern to be searched are distinct, what are the minimum time and extra space requirements to search pattern
+Ans - O(n) time and O(1) extra space
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 6. What is the time complexity of the brute force algorithm for checking if a string is a subsequence of another?
+Ans - O(m*n)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 7. Which of the following is the best method to check if a string is a subsequence of another?
+Ans -  Dynamic programmig
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 8. In C++, what is the difference between the == operator and the strcmp() function when comparing strings?
+ Ans - The == operator compares the memory addresses of the strings while strcmp() compares their contents.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ QUESTION 9. In C / C++, which function is not used to find the length of a string?
+ Ans - count()
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ QUESTION 10. Which of the following is used to combine two strings in C++?
+ Ans - Concatenate operator (+)
