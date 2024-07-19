@@ -1,0 +1,21 @@
+QUESTION 1. Two matrices having dimensions ( r1 * c1 ) and ( r2 * c2 ) can be multiplied only if,
+Ans - c1 = r2
+--------------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 2. What is the dimension of the matrix which is found after multiplying two matrices of dimensions ( r1 * c1 ) and ( r2 * c2 ) ?
+Ans - r1 * c2
+--------------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 3. What is the output matrix after multiplying given 2 matrices?
+           1  2      1  2
+           3  4  X   3  4
+           5  6      5  6
+ Ans - The matrices cannot be multiplied
+--------------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 4.  What is the output of, 
+            1  2  3        1  2
+                      x    3  4
+            4  5  6        5  6
+ Ans- 22	28
+      49	64
+--------------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 5. Does the multiplication of 3 matrices of ( 3 x 3 ) follow the associative property?
+Ans - Yes, multiplication of these matrices follow associative property
