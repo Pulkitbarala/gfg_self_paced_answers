@@ -1,0 +1,64 @@
+QUESTION 1
+Consider n elements that are equally distributed in k stacks. In each stack, elements of it are arranged in ascending order (min is at the top in each of the stack and then increasing downwards).
+Given a queue of size n in which we have to put all n elements in increasing order. What will be the time complexity of the best known algorithm?
+
+Ans - O(n logk)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 2
+Consider the following statements:
+i.   First-in-first out types of computations are efficiently supported by STACKS.
+ii.  Implementing LISTS on linked lists is more efficient than implementing LISTS on an array for almost all the basic LIST operations.
+iii. Implementing QUEUES on a circular array is more efficient than implementing QUEUES on a linear array with two indices.
+iv.  Last-in-first-out type of computations are efficiently supported by QUEUES.
+Which of the following is correct?
+
+Ans - 
+(iii) is true
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 3
+Which of the following permutation can be obtained in the same order using a stack assuming that input is the sequence 5, 6, 7, 8, 9 in that order?
+
+Ans - 
+7, 8, 9, 6, 5
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 4
+The minimum number of stacks needed to implement a queue is
+
+Ans - 
+2
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 5
+The best data structure to check whether an arithmetic expression has balanced parenthesis is a
+
+Ans - 
+Stack
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 6
+What is the time complexity of the push and pop operations in a stack implemented using an array?
+
+Ans - 
+O(1)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 7
+The seven elements A, B, C, D, E, F and G are pushed onto a stack in reverse order, i.e., starting from G. The stack is popped five times and each element is inserted into a queue.Two elements are deleted from the queue and pushed back onto the stack. Now, one element is popped from the stack. The popped item is ________.
+
+Ans - 
+B
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 8
+The five items: A, B, C, D, and E are pushed in a stack, one after other starting from A. The stack is popped four items and each element is inserted in a queue. The two elements are deleted from the queue and pushed back on the stack. Now one item is popped from the stack. The popped item is
+
+Ans - 
+D
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 9
+Stack A has the entries a, b, c (with a on top). Stack B is empty. An entry popped out of stack A can be printed immediately or pushed to stack B. An entry popped out of the stack B can be only be printed. In this arrangement, which of the following permutations of a, b, c are not possible?
+
+Ans - 
+c a b
+-----------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 10
+Which operation is performed on the top of the stack when implementing the undo feature in a text editor?
+
+Ans - 
+Pop
