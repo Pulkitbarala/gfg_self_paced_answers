@@ -1,3 +1,5 @@
+class Solution {
+  public:
 Node* sortedInsert(Node *head, int x) {
     Node* newNode = getNode(x);
 
@@ -27,4 +29,5 @@ Node* sortedInsert(Node *head, int x) {
     current->next = newNode;
 
     return head;
+}
 };
