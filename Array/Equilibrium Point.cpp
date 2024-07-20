@@ -21,3 +21,26 @@ class Solution{
         return -1; // No equilibrium point found
     }
 };
+-------------------------------------------------------------------------------------------------------------------------
+class Solution {
+  public:
+    int equilibriumPoint(vector<long long> &arr) {
+        int n = arr.size();
+        if (n == 1) return 1; // If there's only one element, it's the equilibrium point
+
+        long long totalSum = accumulate(arr.begin(), arr.end(), 0LL);
+        long long leftSum = 0;
+
+        for (int i = 0; i < n; ++i) {
+            totalSum -= arr[i]; // totalSum now represents the sum of elements right of the current index
+
+            if (leftSum == totalSum) {
+                return i + 1; // Returning 1-based index
+            }
+
+            leftSum += arr[i]; // Updating leftSum for the next iteration
+        }
+
+        return -1; // If no equilibrium point is found
+    }
+};
