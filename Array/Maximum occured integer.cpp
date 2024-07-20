@@ -1,23 +1,20 @@
 class Solution {
-public:
-    int maxOccured(int L[], int R[], int n, int maxx) {
-        vector<int> arr(maxx + 2, 0); 
-        for (int i = 0; i < n; ++i) {
-            arr[L[i]]++;
-            if (R[i] + 1 <= maxx) {
-                arr[R[i] + 1]--;
-            }
+  public:
+    int maxOccured(int n, int l[], int r[], int maxx) {
+        vector<int> arr(maxx + 2, 0);
+        for (int i = 0; i < n; i++) {
+            arr[l[i]] += 1;
+            arr[r[i] + 1] -= 1;
         }
         int max_occurrence = arr[0];
-        int min_index = 0;
-        for (int i = 1; i <= maxx; ++i) {
+        int result = 0;
+        for (int i = 1; i <= maxx; i++) {
             arr[i] += arr[i - 1];
             if (arr[i] > max_occurrence) {
                 max_occurrence = arr[i];
-                min_index = i;
+                result = i;
             }
         }
-
-        return min_index;
+        return result;
     }
 };
