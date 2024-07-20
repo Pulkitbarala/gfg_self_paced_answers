@@ -10,3 +10,22 @@ public:
         return max_so_far;
     }
 };
+-------------------------------------------------------------------------------------------------
+class Solution {
+  public:
+    // Function to find the sum of contiguous subarray with maximum sum.
+    long long maxSubarraySum(vector<int> &arr) {
+        int n = arr.size();
+        if (n == 0) return 0;
+
+        long long current_max = arr[0];
+        long long global_max = arr[0];
+
+        for (int i = 1; i < n; ++i) {
+            current_max = max((long long)arr[i], current_max + arr[i]);
+            global_max = max(global_max, current_max);
+        }
+
+        return global_max;
+    }
+};
